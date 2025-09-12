@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-
 <!--exercise 1: create the basic html form-->
 <form>
 <label>Username:</label>
@@ -21,5 +20,27 @@
 </form>
 
 <!--exercise 3: add placeholder text-->
+<form>
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" placeholder="Enter
+your username">
+<label for="password">Password:</label>
+<input type="password" id="password" name="password"
+placeholder="Enter your password">
+<button type="submit">Login</button>
+</form>
+
+<!--exercise 4: group form elements inside a container-->
+<div class="login-box">
+<form>
+<label for="username">Username:</label>
+<input type="text" id="username" name="username"
+placeholder="Enter your username">
+<label for="password">Password:</label>
+<input type="password" id="password" name="password"
+placeholder="Enter your password">
+<button type="submit">Login</button>
+</form>
+</div>
 
 </html>
