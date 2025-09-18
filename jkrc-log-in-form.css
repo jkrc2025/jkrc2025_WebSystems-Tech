@@ -1,7 +1,18 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  padding-top: 500px;   /* 👈 pushes everything down */
+}
+
+
 /*exercise 5: add basic css for inputs*/
 input { display: block;
 width: 100%;
-padding: 8px;
+padding: 4px;
 margin: 8px 0;
 }
 
