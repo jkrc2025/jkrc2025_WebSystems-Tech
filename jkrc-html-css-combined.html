@@ -120,6 +120,42 @@ input, textarea {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/*centering Content with Flexbox*/
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*sticky header*/
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background: rgb(53, 100, 96);
+    padding: 15px;
+}
+
+/*fixed footer*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: gray;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*responsive columns (Percentage Widths)*/
+.col {
+float: left;
+width: 33.3%;
+padding: 20px;
+box-sizing: border-box;
+}
+
 </style>
 </head>
 <body>
@@ -230,14 +266,7 @@ onclick="document.getElementById('myModal').classList.add('show')">Open Modal</b
 </div>
 </body>
 
-<!--Centering Content with Flexbox-->
-<style>
-.center {
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-}
+
 </style>
 </head>
 <body>
@@ -246,14 +275,7 @@ height: 100vh;
 </div>
 </body>
 
-<!--sticky header-->
-<style>
-header {
-position: sticky;
-top: 0;
-background: lightblue;
-padding: 15px;
-}
+
 </style>
 </head>
 <body>
@@ -262,17 +284,7 @@ padding: 15px;
 <div style="height:1500px;"></div>
 </body>
 
-<!--fixed footer-->
-<style>
-footer {
-position: fixed;
-bottom: 0;
-width: 100%;
-background: gray;
-color: white;
-text-align: center;
-padding: 10px;
-}
+
 </style>
 </head>
 <body>
@@ -280,14 +292,7 @@ padding: 10px;
 <footer>Fixed Footer</footer>
 </body>
 
-<!--responsive columns (Percentage Widths)-->
-<style>
-.col {
-float: left;
-width: 33.3%;
-padding: 20px;
-box-sizing: border-box;
-}
+
 </style>
 </head>
 <body>
