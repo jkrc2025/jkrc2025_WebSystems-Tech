@@ -156,6 +156,49 @@ padding: 20px;
 box-sizing: border-box;
 }
 
+/*image gallery with flexbox*/
+.gallery {
+display: flex;
+flex-wrap: wrap;
+} 
+.gallery img {
+width: 30%;
+margin: 1%;
+}
+
+/*profile card layout*/
+.card {
+width: 250px;
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 15px;
+text-align: center;
+} 
+.card img {
+width: 100px;
+border-radius: 50%;
+}
+
+/*simple banner section*/
+.banner {
+background: lightblue;
+padding: 50px;
+text-align: center;
+}
+
+/*responsive navbar with flexbox*/
+nav {
+display: flex;
+justify-content: space-between;
+background: #333;
+padding: 10px;
+}
+nav a {
+color: white;
+margin: 0 10px;
+text-decoration: none;
+}
+
 </style>
 </head>
 <body>
@@ -301,16 +344,7 @@ onclick="document.getElementById('myModal').classList.add('show')">Open Modal</b
 <div class="col">Column 3</div>
 </body>
 
-<!--image gallery with flexbox-->
-<style>
-.gallery {
-display: flex;
-flex-wrap: wrap;
-} 
-.gallery img {
-width: 30%;
-margin: 1%;
-}
+
 </style>
 </head>
 <body>
@@ -321,19 +355,7 @@ margin: 1%;
 </div>
 </body>
 
-<!--profile card layout-->
-<style>
-.card {
-width: 250px;
-border: 1px solid #ccc;
-border-radius: 5px;
-padding: 15px;
-text-align: center;
-} 
-.card img {
-width: 100px;
-border-radius: 50%;
-}
+
 </style>
 </head>
 <body>
@@ -344,13 +366,7 @@ border-radius: 50%;
 </div>
 </body>
 
-<!--simple banner section-->
-<style>
-.banner {
-background: lightblue;
-padding: 50px;
-text-align: center;
-}
+
 </style>
 </head>
 <body>
@@ -360,19 +376,7 @@ text-align: center;
 </div>
 </body>
 
-<!--responsive navbar with flexbox-->
-<style>
-nav {
-display: flex;
-justify-content: space-between;
-background: #333;
-padding: 10px;
-}
-nav a {
-color: white;
-margin: 0 10px;
-text-decoration: none;
-}
+
 </style>
 </head>
 <body>
