@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Experiments</title>
+
+  <style>
+    /* === Header === */
+    header {
+      background-color: rgb(69, 97, 89);
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* === Two-column layout === */
+    .left {
+      float: left;
+      width: 50%;
+      background: lightgray;
+      padding: 20px;
+    } 
+    .right {
+      float: right;
+      width: 50%;
+      background: rgb(86, 86, 15);
+      padding: 20px;
+    }
+
+    /* === Responsive image === */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* === Nav bar === */
+    ul {
+      list-style-type: none;
+      background: #445977;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      display: inline;
+      margin-right: 20px;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* === Button === */
+    .btn {
+      background: rgb(45, 62, 65);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    } 
+    .btn:hover {
+      background: rgb(100, 130, 128);
+    }
+
+    /* === Form === */
+    form {
+      width: 300px;
+      margin: 20px auto;
+    } 
+    input, textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+    }
+
+    /* === Card === */
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      width: 250px;
+      margin: 10px auto;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* === Modal === */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px;
+      border: 1px solid black;
+    }
+    .modal.show {
+      display: block;
+    }
+
+    /* === Flexbox row === */
+    .row {
+      display: flex;
+    } 
+    .col {
+      flex: 1;
+      margin: 5px;
+      padding: 20px;
+      background: lightblue;
+    }
+
+    /* === Dropdown === */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    } 
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: white;
+      border: 1px solid #ccc;
+      min-width: 120px;
+    } 
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* === Center content === */
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+    }
+
+    /* === Sticky header === */
+    .sticky-header {
+      position: sticky;
+      top: 0;
+      background: lightblue;
+      padding: 15px;
+    }
+
+    /* === Fixed footer === */
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: gray;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* === Responsive columns === */
+    .col-3 {
+      float: left;
+      width: 33.3%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    /* === Image gallery === */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+    } 
+    .gallery img {
+      width: 30%;
+      margin: 1%;
+    }
+
+    /* === Profile card === */
+    .profile-card {
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 15px;
+      text-align: center;
+      margin: 20px auto;
+    } 
+    .profile-card img {
+      width: 100px;
+      border-radius: 50%;
+    }
+
+    /* === Banner === */
+    .banner {
+      background: lightblue;
+      padding: 50px;
+      text-align: center;
+    }
+
+    /* === Navbar flexbox === */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      background: #333;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    /* === Pricing === */
+    .pricing {
+      display: flex;
+      justify-content: center;
+    } 
+    .plan {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 10px;
+      width: 200px;
+      text-align: center;
+    }
+
+    /* === Sidebar === */
+    .sidebar {
+      width: 200px;
+      float: left;
+      background: lightgray;
+      height: 100vh;
+      padding: 20px;
+    } 
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Website</h1>
+  </header>
+
+  <!-- Two column -->
+  <div class="left">Left Content</div>
+  <div class="right">Right Content</div>
+
+  <hr>
+
+  <!-- Responsive Image -->
+  <img src="https://via.placeholder.com/600x300" alt="Sample">
+
+  <hr>
+
+  <!-- Navbar -->
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <hr>
+
+  <!-- Button -->
+  <button class="btn">Pinduti Daw Ngaya</button>
+
+  <hr>
+
+  <!-- Form -->
+  <form>
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+    <button>Submit</button>
+  </form>
+
+  <hr>
+
+  <!-- Card -->
+  <div class="card">
+    <h3>Card Title</h3>
+    <p>Some card content.</p>
+  </div>
+
+  <hr>
+
+  <!-- Modal -->
+  <button onclick="document.getElementById('myModal').classList.add('show')">Open Modal</button>
+  <div id="myModal" class="modal">
+    <p>This is a modal!</p>
+  </div>
+
+  <hr>
+
+  <!-- Flexbox columns -->
+  <div class="row">
+    <div class="col">Column 1</div>
+    <div class="col">Column 2</div>
+    <div class="col">Column 3</div>
+  </div>
+
+  <hr>
+
+  <!-- Dropdown -->
+  <div class="dropdown">
+    <button>Menu</button>
+    <div class="dropdown-content">
+      <p>Option 1</p>
+      <p>Option 2</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Centered -->
+  <div class="center">
+    <h1>Centered Text</h1>
+  </div>
+
+  <hr>
+
+  <!-- Sticky header -->
+  <div class="sticky-header">Sticky Header</div>
+  <p>Scroll down...</p>
+  <div style="height:150px;"></div>
+
+  <hr>
+
+  <!-- Fixed footer -->
+  <p>Page content here...</p>
+  <footer>Fixed Footer</footer>
+
+  <hr>
+
+  <!-- Responsive 3 columns -->
+  <div class="col-3">Column 1</div>
+  <div class="col-3">Column 2</div>
+  <div class="col-3">Column 3</div>
+
+  <hr>
+
+  <!-- Gallery -->
+  <div class="gallery">
+    <img src="https://via.placeholder.com/150">
+    <img src="https://via.placeholder.com/150">
+    <img src="https://via.placeholder.com/150">
+  </div>
+
+  <hr>
+
+  <!-- Profile card -->
+  <div class="profile-card">
+    <img src="https://via.placeholder.com/100">
+    <h3>Jeniela Kate Cidro</h3>
+    <p>IT Animation Student</p>
+  </div>
+
+  <hr>
+
+  <!-- Banner -->
+  <div class="banner">
+    <h1>Welcome to My Website</h1>
+    <p>This is a hero banner</p>
+  </div>
+
+  <hr>
+
+  <!-- Navbar with flex -->
+  <nav>
+    <div>Logo</div>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+    </div>
+  </nav>
+
+  <hr>
+
+  <!-- Pricing -->
+  <div class="pricing">
+    <div class="plan">Basic</div>
+    <div class="plan">Standard</div>
+    <div class="plan">Premium</div>
+  </div>
+
+  <hr>
+
+  <!-- Sidebar -->
+  <div class="sidebar">Sidebar</div>
+  <div class="content">Main Content</div>
+
+</body>
+</html>
