@@ -4,84 +4,124 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #75807d;
-      color: #333;
-    }
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #121212; 
+  color: #f5f5f5; 
+}
 
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      background: #222;
-      color: white;
-    }
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: #1e1e1e; 
+  color: #f5f5f5;
+}
 
-    nav a {
-      margin: 0 10px;
-      color: white;
-      text-decoration: none;
-    }
+header img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
 
-    section {
-      max-width: 1000px;
-      margin: 50px auto;
-      padding: 20px;
-    }
+nav a {
+  margin: 0 12px;
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
-    h2 {
-      margin-bottom: 20px;
-      font-size: 1.8rem;
-      border-bottom: 2px solid #eee;
-      display: inline-block;
-    }
+nav a:hover {
+  color: #d87c4a; 
+}
 
-    /* -------- Horizontal Showcase -------- */
-    .showcase {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      gap: 20px;
-      padding: 20px 0;
-    }
+section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
 
-    .showcase::-webkit-scrollbar {
-      display: none; /* hide scrollbar */
-    }
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #d87c4a; 
+  border-bottom: 2px solid #333; 
+  display: inline-block;
+}
 
-    .item {
-      flex: 0 0 80%;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      scroll-snap-align: start;
-      text-align: center;
-      padding: 15px;
-    }
+/* Horizontal Showcasje */
+.showcase {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 20px 0;
+}
 
-    .item img, .item video {
-      max-width: 100%;
-      border-radius: 8px;
-    }
+.showcase::-webkit-scrollbar {
+  display: none;
+}
 
-    footer {
-      text-align: center;
-      background: #222;
-      color: white;
-      padding: 20px;
-    }
+.item {
+  flex: 0 0 80%;
+  background: #1e1e1e; /* dark card */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  scroll-snap-align: start;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s;
+}
 
-    footer a {
-      color: #f4a261;
-      text-decoration: none;
-    }
-  </style>
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item img, .item video {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+a.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #d87c4a; /* muted orange button */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+a.button:hover {
+  background: #c06636; /* slightly darker orange */
+}
+
+footer {
+  text-align: center;
+  background: #1e1e1e;
+  color: #f5f5f5;
+  padding: 20px;
+}
+
+footer a {
+  color: #d87c4a;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #f5f5f5;
+}
+</style>
+
+
 </head>
 <body>
   <header>
-    <h1>Jeniela Kate Cidro</h1>
+    <h1>Jeniela</h1>
 <!--image-->
     <img src="JENIELA1X1.jpg" alt="My Photo" width="150"> 
     <p>IT Animation Student | Writer | Web Developer</p>
@@ -165,8 +205,8 @@
   <!-- CONTACT -->
   <footer id="contact">
     <h2>Contact</h2>
-    <p>Email me: <a href="mailto:jkatecidro@gmail.com">jkatecidro@gmail.com</a></p>
-    <p>Facebook: <a href="https://facebook.com/jkzio21" target="_blank">over here bro my fb</a></p>
+    <p>Email me: <a href="mailto:jko@gmail.com">jkatecidro@gmail.com</a></p>
+    <p>Facebook: <a href="https://facebook.com/j" target="_blank">over here bro my fb</a></p>
   </footer>
 </body>
 </html>

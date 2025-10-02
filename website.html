@@ -1,0 +1,91 @@
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff2e6; /* light peach background */
+  color: #3e2c2a; /* dark brown text for readability */
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f78ca0, #f4a261); /* sunset gradient */
+  color: #fffaf0;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #fffaf0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd6a5; /* lighter accent on hover */
+}
+
+section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #f4a261; /* subtle sunset line */
+  display: inline-block;
+  color: #c1440e;
+}
+
+/* -------- Horizontal Showcase -------- */
+.showcase {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.showcase::-webkit-scrollbar {
+  display: none; /* hide scrollbar */
+}
+
+.item {
+  flex: 0 0 80%;
+  background: #fffaf0; /* soft cream card */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  scroll-snap-align: start;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item img, .item video {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  background: #f78ca0; /* warm sunset footer */
+  color: #fffaf0;
+  padding: 20px;
+}
+
+footer a {
+  color: #ffd6a5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #fffaf0;
+}
+</style>
