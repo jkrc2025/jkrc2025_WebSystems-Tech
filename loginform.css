@@ -1,0 +1,79 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.login-box {
+  background: #222;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  width: 300px;
+  transition: transform 0.6s;
+  position: relative;
+  z-index: 10;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-box label {
+  display: block;
+  margin-top: 10px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.login-box button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #00bfff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: #0099cc;
+}
+
+/* rainbow chaos fly animation */
+.fly {
+  animation: spinFly 3s ease-in-out forwards, rainbow 0.5s linear infinite;
+}
+
+@keyframes spinFly {
+  0% { transform: rotate(0deg) translateY(0) scale(1); opacity: 1; }
+  30% { transform: rotate(720deg) scale(1.2); }
+  60% { transform: rotate(1080deg) translateY(-200px) scale(1.5); }
+  100% { transform: rotate(1440deg) translateY(-2000px) scale(0.5); opacity: 0; }
+}
+
+@keyframes rainbow {
+  0%   { background: red; }
+  16%  { background: orange; }
+  33%  { background: yellow; }
+  50%  { background: green; }
+  66%  { background: blue; }
+  83%  { background: indigo; }
+  100% { background: violet; }
+}

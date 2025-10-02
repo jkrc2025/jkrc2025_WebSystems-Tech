@@ -1,216 +1,172 @@
-<!--CIDRO, JENIELA KATE R.
-    BSIT ANIMATION- 3A-->
-<!--HTML Exercises-->
-
-<!--to link css-->
-<link rel="stylesheet" href="jkrcdesign.css">
-
-<!--Basic Structure-->
 <!DOCTYPE html>
-<html>
-
-<!--page title-->
+<html lang="en">
 <head>
-    <title> My Personal Webpage </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fdfdfd;
+      color: #333;
+    }
 
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #222;
+      color: white;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #eee;
+      display: inline-block;
+    }
+
+    /* -------- Horizontal Showcase -------- */
+    .showcase {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 20px;
+      padding: 20px 0;
+    }
+
+    .showcase::-webkit-scrollbar {
+      display: none; /* hide scrollbar */
+    }
+
+    .item {
+      flex: 0 0 80%;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      scroll-snap-align: start;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .item img, .item video {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #f4a261;
+      text-decoration: none;
+    }
+  </style>
 </head>
-<header>
-
-<!--main heading-->
-<h1>Jeniela Kate Cidro</h1>
-
-<!--image-->
-<img src="JENIELA1X1.jpg" alt="My Photo" width ="150">
-
-<!--subheading-->
-<h2> About Me </h2>
-<hr>
-</header>
 <body>
+  <header>
+    <h1>Jeniela Kate Cidro</h1>
+<!--image-->
+    <img src="JENIELA1X1.jpg" alt="My Photo" width="150"> 
+    <p>Animation Student | Writer | Designer</p>
+    <nav>
+      <a href="#writings">Writings</a>
+      <a href="#drawings">Drawings</a>
+      <a href="#3d">3D Projects</a>
+      <a href="#animation">Animation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<!--paragraph, bold text, and underlined text-->
-<p> Hello! My name is <b>Jeniela</b> and I am an <u> IT Animation</u> student. </p>
-<hr>
+  <!-- WRITINGS -->
+  <section id="writings">
+    <h2>Writings</h2>
+    <div class="showcase">
+      <div class="item">
+        <h3>Poetry Collection</h3>
+        <a href="https://docs.google.com" target="_blank">View Docs</a>
+      </div>
+      <div class="item">
+        <h3>Essay Sample</h3>
+        <a href="https://docs.google.com" target="_blank">Read Here</a>
+      </div>
+    </div>
+  </section>
 
-<!--line break-->
-<p>I love writing <br> I also enjoy film. </p>
+  <!-- DRAWINGS -->
+  <section id="drawings">
+    <h2>Traditional Drawings</h2>
+    <div class="showcase">
+      <div class="item">
+        <img src="drawing1.jpg" alt="Drawing Sample">
+        <p>Charcoal Study</p>
+      </div>
+      <div class="item">
+        <img src="drawing2.jpg" alt="Drawing Sample">
+        <p>Watercolor Piece</p>
+      </div>
+      <div class="item">
+        <img src="drawing3.jpg" alt="Drawing Sample">
+        <p>Line Art</p>
+      </div>
+    </div>
+  </section>
 
-<!--horizontal line-->
-<hr>
+  <!-- 3D PROJECTS -->
+  <section id="3d">
+    <h2>3D Projects</h2>
+    <div class="showcase">
+      <div class="item">
+        <img src="3d1.jpg" alt="3D Work">
+        <p>Maya</p>
+      </div>
+      <div class="item">
+        <img src="3d2.jpg" alt="3D Work">
+        <p>Z-brush</p>
+      </div>
+    </div>
+  </section>
 
-<p>Top 3 Foods in my BH</p>
-<!--ordered list-->
-<ol>
-    <li>pancit canton</li>
-    <li>salag</li>
-    <li>de lata</li>
-</ol>
-<hr>
+  <!-- ANIMATIONS -->
+  <section id="animation">
+    <h2>Animations</h2>
+    <div class="showcase">
+      <div class="item">
+        <video controls>
+          <source src="animation1.mp4" type="video/mp4">
+        </video>
+        <p>Ball Bounce</p>
+      </div>
+      <div class="item">
+        <video controls>
+          <source src="animation2.mp4" type="video/mp4">
+        </video>
+        <p>Character Walk Cycle</p>
+      </div>
+    </div>
+  </section>
 
-<p>My Hobbies</p>
-<!--unordered list, and italic texts-->
-<ul>
-<li><i>Coding</li>
-<li>Photography</li>
-<li>Writing</i> </li> 
-</ul>
-<hr>
-
-<!--link-->
-<a href="https://www.facebook.com/jkzio21"> Visit my Epbi.com</a> <br>
-
-<!--email link-->
-<a href="mailto: jkatecidro@gmail.com">Send me an Email</a>
-<hr>
-
-<!--table-->
-<table border="1">
-    <tr>
-        <td>Name</td>
-        <td>Age</td>
-    </tr>
-    </tr>
-     <td>Jeniela</td>
-        <td>20</td>
-    </tr>
-</table>
-<hr>
-
-<!--form(text input)-->
-<form>
-    Name: <input type="text" name="fullname">
-</form>
-<hr>
-
-<!--form(password input)-->
-<form>
-Password: <input type="password" name="pwd">
-</form>
-<hr>
-
-<!--form(button)-->
-<form>
-    <button type="submit">Submit</button>
-</form>
-<hr>
-
-<!--Hehe commentt-->
-
-<!--form(radio buttons)-->
-<form>
-    <p>Gender:</p>
-    <input type="radio"name="gender"value="male">Male<br>
-    <input type="radio"name="gender"value="female">Female
-</form>
-<hr>
-
-<!--form(checkboxes)-->
-<form>
-<p>Hobbies:</p>
-<input type="checkbox" name="hobby" value="writing"> Writing<br>
-<input type="checkbox" name="hobby" value="sleeping"> Sleeping<br>
-<input type="checkbox" name="hobby" value="thinking"> Thinking
-</form>
-<hr>
-
-<!--form(dropdown list)-->
-<form>
-<label for="country">Select Country:</label>
-<select id="country">
-<option>Philippines</option>
-<option>Japan</option>
-<option>India</option>
-</select>
-</form>
-<hr>
-
-<!--form(text area)-->
-<form>
-<label for="message">Message:</label><br>
-<textarea id="message" rows="4" cols="30"></textarea>
-</form>
-<hr>
-
-<!--add a fav icon-->
-<head>
-<link rel="icon" type="image/png" href="icon.png">
-</head>
-
-<!--audio player-->
-<audio controls>
-<source src="Kung_Malaya_Lang_Ako.mp3" type="audio/mpeg">
-</audio>
-<hr>
-
-<!--video player-->
-<video width="1080" height="720" controls>
-<source src="screenrecord3d.mp4" type="video/mp4">
-</video>
-<hr>
-
-<!--iframe(embed website)-->
-<iframe src="https://www.google.com" width="600"
-height="400"></iframe>
-<hr>
-
-<!--iframe(embed yt vid)-->
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/QwLvrnlfdNo"
-frameborder="0" allowfullscreen>
-</iframe>
-<hr>
-
-<!--superscript-->
-<p>Water formula: H<sub>2</sub>O</p>
-<hr>
-
-<!--subscript-->
-<p>x<sup>2</sup></p>
-<hr>
-
-<!--strong text-->
-<p>This is <strong>very important</strong>!</p>
-<hr>
-
-<!--emphasized text-->
-<p>Please <em>read carefully</em>.</p>
-<hr>
-
-<!--small text-->
-<p><small>© 2025 My Website</small></p>
-<hr>
-
-<!--blockquote-->
-<blockquote>
-"ayoko na jo pagod na aq"
-</blockquote>
-<hr>
-
-<!--inline quote-->
-<p>Kit said, <q>Gutom na ako</q></p>
-<hr>
-
-<!--abbreviation-->
-<p><abbr title="ako to si taylor swift naki-online lang">ATSTSNOL</abbr> < i-hover mo yan sha</p>
-<hr>
-
-<!--address tag-->
-<address>
-Written by Jeniela Kate Cidro<br>
-Visit us at www.reginevelasquez.com<br>
-Polangui, Philippines
-</address>
-<hr>
-
-<!--marked text-->
-<p>This is a <mark>highlighted</mark> word.</p>
-<hr>
-
-<!--progress bar-->
-<p>Task Progress:</p>
-<progress value="50" max="100"></progress>
-
-
-</form>
+  <!-- CONTACT -->
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p>Email me: <a href="mailto:youremail@gmail.com">youremail@gmail.com</a></p>
+    <p>Facebook: <a href="https://facebook.com/yourusername" target="_blank">My FB</a></p>
+  </footer>
 </body>
 </html>
