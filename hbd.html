@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday!</title>
+<style>
+  body {
+    background: #fff0f5;
+    text-align: center;
+    font-family: 'Calisto MT', serif;
+  }
+
+  h1 {
+    text-transform: uppercase; /* Makes the text uppercase */
+    font-size: 3em;
+    margin-top: 50px;
+    color: #ff1493;
+  }
+
+  .cake {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    margin: 70px auto;
+    background: #6b330c;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .candle {
+    position: absolute;
+    top: -40px;
+    left: 90px;
+    width: 20px;
+    height: 40px;
+    background: #e0d890;
+    border-radius: 3px;
+  }
+
+  .flame {
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    width: 10px;
+    height: 20px;
+    background: orange;
+    border-radius: 50%;
+    animation: flicker 0.3s infinite alternate;
+  }
+
+  @keyframes flicker {
+    from { transform: scaleY(1); }
+    to { transform: scaleY(1.3); }
+  }
+
+  button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<h1>Happy Birthday AARON!</h1>
+
+<div class="cake">
+  <div class="candle">
+    <div class="flame"></div>
+  </div>
+</div>
+
+<button onclick="blowCandle()">Blow the Candle!</button>
+
+<audio id="music" src="happy-birthday.mp3"></audio>
+
+<script>
+function blowCandle() {
+  const flame = document.querySelector('.flame');
+  flame.style.display = 'none';
+  document.getElementById('music').play();
+  alert('🎉 Candle blown! Happy Birthday Kupal! 🎉');
+}
+</script>
+
+</body>
+</html>
